@@ -28,6 +28,7 @@ nav{
 }
 
 nav a{
+    font-family: 'font-doom_UI-Bold';
     height: 100%;
     padding: 10% 20px;
     color: white;
