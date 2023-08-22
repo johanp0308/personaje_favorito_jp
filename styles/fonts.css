@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'font-doom_UI-Regular';
+    src: url(../fonts/EternalUiRegular-BWZGd.ttf);
+}
+
+@font-face {
+    font-family: 'font-doom_UI-Bold';
+    src: url(../fonts/EternalUiBold-Rpj0A.ttf);
+}
+
+@font-face {
+    font-family: 'font-doom_UI2-Regular';
+    src: url(../fonts/EternalUi2Regular-1Gvn2.ttf);
+}
+
+@font-face {
+    font-family: 'font-doom_UI2-Bold';
+    src: url(../fonts/EternalUi2Bold-nRwLg.ttf);
+}
+
+@font-face {
+    font-family: 'font-doom_logo-eternal';
+    src: url(../fonts/EternalLogo-lg2dd.ttf);
+}
+
+@font-face {
+    font-family: 'font-doom_BM-bold';
+    src: url(../fonts/EternalBattleBold-rgP3y.ttf);
+}
+
+@font-face {
+    font-family: 'font-doom_AG';
+    src: url(../fonts/EternalAncient-8MXeg.ttf);
+}
