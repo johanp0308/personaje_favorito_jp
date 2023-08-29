@@ -15,6 +15,8 @@
     --fondo1:url(../img/fondo_doom_eternal.jpg);
     --fonod2:url(../img/fondo_doom_eternal_2.jpg);
     --fondo3:url(../img/fondo2_doom_eternal.png);
+    --fondo4:url(../img/doom_image_2.jpg);
+
 }
 
 a{
@@ -40,6 +42,7 @@ nav{
 nav a{
     font-family: 'font-doom_UI-Bold';
     padding: 10% 20px;
+    height: 100%;
     color: white;
 }
 
@@ -101,10 +104,59 @@ nav a:hover{
     background-image: url(../img/btn_burger_nAct.png);
 }
 
+/* Esto es el contenido de la pagina */
+
 .contet{
     display: flex;
     flex-direction: column;
+}
+
+.doom-eternal-expl{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 20px;
+    height: 90vh;
+    background-image: var(--fondo4);
+}
+
+.doom-eternal-expl h3{
+    font-size: 4rem;
+}
+
+.doom-eternal-expl article{
+    width: 60%;
+    font-size: 1.5rem;
+    background-color: rgb(0 0 0 / 70%);
+    padding: 40px;
+}
+
+.historia{
+    padding: 1rem;
+    color: white;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historia-caratulas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.caratula img{
+    width: 20rem;
+    padding: 20px;
+}
+
+.caratula:hover{
+    
 }
 
 @media screen and (max-width:560px){
@@ -123,7 +175,7 @@ nav a:hover{
     }
     nav a{
         width: 100%;
-        background-color: rgb(0 0 0 / 70%);;
+        background-color: rgb(0 0 0 / 70%);
     }
 
     #hamburger{
