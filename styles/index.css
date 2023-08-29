@@ -21,6 +21,16 @@ a{
     text-decoration: none;
 }
 
+body{
+    /* background-color: #890000; */
+}
+
+main{
+    background-image: var(--fondo1);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 nav{
     height: 100%;
     display: flex;
@@ -29,11 +39,9 @@ nav{
 
 nav a{
     font-family: 'font-doom_UI-Bold';
-    height: 100%;
     padding: 10% 20px;
     color: white;
 }
-
 
 nav a:hover{
     background-color: var(--color5);
@@ -60,7 +68,7 @@ nav a:hover{
 
 .inicio{
     height: 100vh;
-    background-image: var(--fondo1);
+    background-repeat:inherit;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -69,10 +77,9 @@ nav a:hover{
 }
 
 .inicio-video{
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 70%);
-    width: 40%;
-    height: 50vh;
+    padding: 10px;
+    background-color: rgb(0 0 0 / 70%);
+    width: 60%;
 }
 
 .inicio-video video{
@@ -87,4 +94,52 @@ nav a:hover{
 .inicio-logo img{
     width: 100%;
     height: 100%;
+}
+
+#hamburger{
+    display: none;
+    background-image: url(../img/btn_burger_nAct.png);
+}
+
+.contet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:560px){
+    .inicio{
+        flex-direction: column;
+    }
+
+    nav{
+        display: none; 
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.555);
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+    }
+    nav a{
+        width: 100%;
+        background-color: rgb(0 0 0 / 70%);;
+    }
+
+    #hamburger{
+        display: block;
+        
+    }
+
+    .inicio-logo{
+        margin-top: 80px;
+        width: 70%;
+    }
+    
+    .inicio-video{
+        padding: 10px;
+        width: 100%;
+    }
+
+    
 }
