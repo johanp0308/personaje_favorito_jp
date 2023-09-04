@@ -282,6 +282,11 @@ img[src='./img/armas/DE_Crisol.webp']{
   width: 1000px;
 }
 
+/* Demonios */
+#demonios{
+  height: 100vh ;
+}
+
 /* Foooter */
 
 footer {
