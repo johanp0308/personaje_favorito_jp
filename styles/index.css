@@ -40,13 +40,13 @@ main {
   background-size: cover;
 }
 
-nav {
+.nav-desktop {
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-nav a {
+.nav-desktop a {
   font-family: "font-doom_UI-Bold";
   padding: 10% 10px;
   height: 100%;
@@ -54,7 +54,11 @@ nav a {
   font-size: 2rem;
 }
 
-nav a:hover {
+.nav-responsive{
+  display: none;
+}
+
+.nav-desktop a:hover {
   background-color: var(--color5);
 }
 
@@ -68,6 +72,10 @@ nav a:hover {
 
 .text{
   font-size: 2.5rem;
+}
+
+.color-white{
+  color: white;
 }
 
 .sub-text{
@@ -337,6 +345,39 @@ footer {
 @media screen and (max-width: 768px) {
   
   /* Inicio */
+  .nav-desktop{
+    display: none;
+  }
+
+  .nav-responsive{
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-responsive button img{
+    height: 100%;
+  }
+
+  .nav-responsive button:nth-child(1):hover{
+    background-color: var(--color5);
+  }
+
+  .menu-responsive{
+    display: flex;
+    background-color: ;
+    flex-direction: column;
+  }
+
+  .menu-text{
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .menu-color{
+    background-color: rgb(0 0 0 / 95%);
+  }
+
+
   .inicio {
     display: flex;
     flex-direction: column;
