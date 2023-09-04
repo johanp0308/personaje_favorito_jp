@@ -18,14 +18,20 @@
   --fondo4: url(../img/doom_image_2.jpg);
   --fondo_slayer: url(../img/Doom_Slayer.webp);
   --fondo_slayer_hist:url(../img/argentos_doom_eternal.jpeg);
+  --fondo_armas:url(../img/doom_image_1.jpg);
 }
 
 html {
   font-size: 10px;
 }
 
+body{
+  background-color: #1c1c1c;
+}
+
 a {
   text-decoration: none;
+  color:white
 }
 
 main {
@@ -52,6 +58,16 @@ nav a:hover {
   background-color: var(--color5);
 }
 
+.subtitle{
+  font-family: 'font-doom_logo-eternal';
+}
+
+.text{
+  font-size: 2.5rem;
+}
+
+
+
 .logo-page {
   height: 100%;
 }
@@ -75,7 +91,6 @@ nav a:hover {
   height: 100vh;
   background-repeat: inherit;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -161,12 +176,12 @@ nav a:hover {
   font-size: 3rem;
 }
 
-.estadis-slayer {
-  background-color: #890000;
-}
-
 .estadis-slayer-title {
   height: 5vw;
+}
+
+.estadis-slayer .doom-slayer-img{
+  display: none;
 }
 
 .estadis-slayer {
@@ -200,19 +215,48 @@ nav a:hover {
   padding: 4rem;
   height: 100vh;
   display: flex;
-  
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 .slayer-historia-block{
+  padding: 2rem;
   color: white;
   background-color: #0e0e0ec3;
-  height: 50vh;
+  height: 80vh;
   width: 50%;
 }
 
+.slayer-historia-block h3{
+  font-size: 2.3rem;
+}
 
+.slayer-historia img{
+  display: none ;
+}
+.slayer-historia-block img{
+  width: 100%;
+}
 
+/* CARRUSEL ARMAS */
 
+.slayer-armas{
+  background-image: var(--fondo_armas);
+  background-size: cover;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+.slayer-armas .armas-titulo{
+  text-align: center;
+}
+
+.slayer-armas .armas-carrusel{
+  width: 50%;
+}
 
 /* Foooter */
 
@@ -221,13 +265,13 @@ footer {
   font-size: 2rem;
   background-color: #1F1F1F;
   width: 100%;
-  height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .footer-info{
+  padding: 2rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -236,7 +280,6 @@ footer {
 
 .footer-info .secti-logo{
   height: 100%;
-  background-color: #890000;
   padding: 3rem;
 }
 
@@ -246,7 +289,10 @@ footer {
 }
 
 .footer-info > .sections{
-  background-color:white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
 }
 
 .footer-info-autor{
@@ -262,27 +308,22 @@ footer {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 560px) {
+.footer-info .sections article p:nth-child(1){
+  font-family: 'font-doom_UI-Bold';
+}
+
+
+
+
+
+/* MEDIA QUIERIES */
+
+@media screen and (max-width: 768px) {
+  
+  /* Inicio */
   .inicio {
+    display: flex;
     flex-direction: column;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.555);
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100vh;
-  }
-  nav a {
-    width: 100%;
-    background-color: rgb(0 0 0 / 70%);
-  }
-
-  #hamburger {
-    display: block;
   }
 
   .inicio-logo {
@@ -294,4 +335,101 @@ footer {
     padding: 10px;
     width: 100%;
   }
+
+  /* ------------------ */
+
+  /* Secciones */
+
+  .doom-eternal-expl{
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .doom-eternal-expl h3{
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .doom-eternal-expl article{
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /* ____________________ */
+
+  .historia{
+    font-size: 2.4rem;;
+  }
+  .caratula img{
+    width: 25rem;
+  }
+  /* ____________________ */
+
+  .estadis-slayer-title{
+    height: 8vh;
+  }
+  .estadis-slayer{
+    background: none;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+  }
+  
+  .estadis-slayer .slayer img{
+    margin-top: 1rem;
+    opacity: 1;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .estadis-slayer .doom-slayer-img{
+    display: block;
+    height: 50vh;
+    width: auto;
+  }
+
+  /* ____________________ */
+
+  .slayer-historia{
+    background: none;
+    background-color: #1c1c1c;
+    padding: 1rem;
+    height: auto;
+    flex-direction: column;
+  }
+  .slayer-historia-block{
+    width: 100%;
+    height: auto;
+  }
+
+  .slayer-historia img{
+    width: 100%;
+    display: block;
+  }
+
+
+  /* Footer */
+  .footer-info{
+    flex-direction: column-reverse;
+    padding: .9rem;
+    font-size: 1.3rem;
+  }
+
+  .footer-info .sections{
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .footer-info-autor{
+    display: inline-block;
+  }
+
+  .footer-info .secti-logo{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
 }
