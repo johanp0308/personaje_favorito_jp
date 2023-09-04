@@ -261,7 +261,7 @@ nav a:hover {
 .slayer-armas .armas-titulo{
   text-align: center;
   color: white;
-  font-size: 5rem !important;
+  font-size: 5rem;
 }
 
 .slayer-armas .armas-carrusel{
@@ -270,7 +270,8 @@ nav a:hover {
 }
 
 img[src='./img/armas/DE_Crisol.webp']{
-  
+  height: 563px;
+  width: 1000px;
 }
 
 /* Foooter */
@@ -421,6 +422,17 @@ footer {
   .slayer-historia img{
     width: 100%;
     display: block;
+  }
+
+    /* ____________________ */
+  .slayer-armas{
+    padding: 1rem;
+  }
+  .armas-titulo{
+    font-size: 3rem !important;
+  }
+  .armas-carrusel{
+    width: 100%;
   }
 
 
