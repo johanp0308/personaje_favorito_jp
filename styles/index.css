@@ -283,8 +283,16 @@ img[src='./img/armas/DE_Crisol.webp']{
 }
 
 /* Demonios */
-#demonios{
+.demonios-intro{
+  display: flex;
+  flex-direction: row-reverse;
   height: 100vh ;
+  padding: 3rem;
+}
+.demonios-intro article{
+  padding: 2rem;
+  background-color: #0e0e0e7d;
+  width: 50%;
 }
 
 /* Foooter */
