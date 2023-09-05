@@ -31,4 +31,14 @@ Para el proyecto requeri de informacion y recursos de la pagina oficial tambien 
 
 ## Maquetacion
 
+<p align="center">
+<img src="./maquetacion/inicio.png" width="">
 
+<img src="./maquetacion/que_es.png" width="">
+
+<img src="./maquetacion/estadis_doom.png" width="">
+
+<img src="./maquetacion/historia.png" width="">
+
+<img src="./maquetacion/armas.png" width="">
+</p>
